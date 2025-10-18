@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App de Denúncias Anônimas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>App de Denúncias Anônimas</h1>
+    <p>SOCORRO por botão, voz ou mensagem</p>
+  </header>
+
+  <main>
+    <section id="sos">
+      <h2>Botão de SOS</h2>
+      <p>Pressione o botão abaixo para enviar um alerta anônimo com sua localização.</p>
+      <button id="btnSOS">🚨 SOCORRO</button>
+      <div class="status" id="statusSOS">Aguardando...</div>
+      <button id="btnVoz">🎤 Ativar escuta por voz</button>
+      <p class="status">Palavras-chave: <b>socorro, ajuda, emergência</b></p>
+    </section>
+
+    <section id="denuncia">
+      <h2>Denúncia Anônima Manual</h2>
+      <textarea id="textoDenuncia" placeholder="Descreva o que aconteceu (sem se identificar)"></textarea>
+      <button id="btnEnviarDenuncia">Enviar denúncia</button>
+      <div class="status" id="statusDenuncia"></div>
+    </section>
+
+    <section id="infoESI">
+      <h2>O que é ESI?</h2>
+      <p><strong>ESI</strong> significa <em>Educação Sexual Integral</em>. Ela busca promover conhecimento sobre sexualidade, respeito, igualdade e segurança emocional e física, com base em direitos humanos.</p>
+      <details>
+        <summary>Saiba mais</summary>
+        <ul>
+          <li><a href="https://www.unfpa.org" target="_blank">UNFPA – Fundo de População das Nações Unidas</a></li>
+          <li>Pesquise documentos locais sobre políticas de ESI em seu país.</li>
+        </ul>
+      </details>
+    </section>
+
+    <section id="historico">
+      <h2>Histórico Local</h2>
+      <ul id="listaHistorico"></ul>
+      <button id="btnLimpar">Limpar histórico</button>
+    </section>
+  </main>
+
+  <footer>
+    Protótipo educativo — não coleta dados pessoais. Para uso real, adicione integração segura a um backend.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
